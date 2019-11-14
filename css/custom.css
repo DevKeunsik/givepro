@@ -1,0 +1,10 @@
+.btn-scroll {
+    width: 50px;
+    height: 67px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    top: 82%;
+    background: url("../images/btn_scroll.png") no-repeat 0 0;
+    z-index: 10;
+}
