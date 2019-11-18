@@ -143,7 +143,7 @@
                                 <small>2018.11 ~ 2019.12</small>
                             </span>
                             <p>기존 통합관리자 기능 강화<br>(회원/주문/게시판/CRM 등)</p>-->
-                            <a href="javascript:;" class="lead">Detail View <i class="icon-arrow-right3"></i></a>
+                            <a href="#" class="lead" data-toggle="modal" data-target="#modalDetail_1">Detail View <i class="icon-arrow-right3"></i></a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                             </span>
                             <p>기존의 비전산 사내 인사평가를 전산 시스템으로 개발
                                 사용자 페이지 및 관리자 메뉴 제작</p>-->
-                            <a href="javascript:;" class="lead">Detail View <i class="icon-arrow-right3"></i></a>
+                            <a href="#" class="lead" data-toggle="modal" data-target="#modalDetail_2">Detail View <i class="icon-arrow-right3"></i></a>
                         </div>
                     </div>
                 </div>
@@ -274,6 +274,74 @@
     </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="modalDetail_1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detail View</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>취소/환불 시 메모, 환불일 관리기능 추가</li>
+                    <li>백업 주문 건 복구 함수 개발</li>
+                    <li>개인결제 생성 시 무료 연장 기능 개발</li>
+                    <li>카드결제 카드사 노출 ON/OFF 기능 도입</li>
+                    <li>브랜드 사이트 개인정보처리방침/이용약관 통합관리자 DB 연동</li>
+                    <li>앞선투자그룹 부서 관리 기능 개발 (투자멘토 팀 관리 목적)</li>
+                    <li>관리자 메뉴 권한 관리 기능 신규타입 개발</li>
+                    <li>결제완료 시 고객 문자발송 기능 개발 (MTS)</li>
+                    <li>단순문자발송 기능 개발 (MTS)</li>
+                    <li>CRM 개인결제 및 인센티브 시스템 기능 개선</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalDetail_2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detail View</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="flexslider" style="height: 350px;">
+                    <ul class="slides">
+                        <li><img src="images/project/vote/1.png" /></li>
+                        <li><img src="images/project/vote/2.png" /></li>
+                        <li><img src="images/project/vote/3.png" /></li>
+                        <li><img src="images/project/vote/4.png" /></li>
+                        <li><img src="images/project/vote/5.png" /></li>
+                        <li><img src="images/project/vote/6.png" /></li>
+                        <li><img src="images/project/vote/7.png" /></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>직급에 따른 평가 유형 제공</li>
+                    <li>각 부서별 부서장 직급 권한 부여 기능</li>
+                    <li>평가대상자 점수 산출 기능 제공</li>
+                    <li>사용성을 위해 평가 결과 엑셀 다운 제공</li>
+                    <li>지역별로 분리되어있는 부서를 그룹화 할 수 있는 부서 그룹화 기능 제공</li>
+                    <li>평가 기간 및 대상자 설정 기능 제공</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- jQuery Easing -->
@@ -288,6 +356,14 @@
 
 <!-- MAIN JS -->
 <script src="js/main.js"></script>
+
+<script>
+    $(function() {
+        $('.flexslider').flexslider({
+            directionNav:false
+        });
+    });
+</script>
 
 </body>
 </html>
