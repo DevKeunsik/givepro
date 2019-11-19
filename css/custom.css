@@ -34,10 +34,9 @@
     font-size: 17px;
 }
 
-/*
-.flexslider .slides li {
-    max-height: 250px;
+.detailView .slides li {
+    height: 300px !important;
 }
-.flexslider .slides img {
-    max-height: 250px;
-}*/
+.detailView .slides img {
+    height: 300px !important;
+}

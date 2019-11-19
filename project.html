@@ -56,6 +56,8 @@
     <link rel="stylesheet" href="css/flexslider.css">
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -315,7 +317,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="flexslider" style="height: 350px;">
+                <div class="flexslider detailView" style="height: 300px;">
                     <ul class="slides">
                         <li><img src="images/project/vote/1.png" /></li>
                         <li><img src="images/project/vote/2.png" /></li>
@@ -360,7 +362,8 @@
 <script>
     $(function() {
         $('.flexslider').flexslider({
-            directionNav:false
+            directionNav:false,
+            auto:false,
         });
     });
 </script>
